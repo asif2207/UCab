@@ -1,0 +1,106 @@
+/* ── Base button ── */
+.ucab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.ucab-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+  box-shadow: none;
+}
+
+.ucab-btn:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.ucab-btn-full {
+  width: 100%;
+}
+
+/* ── Sizes ── */
+.ucab-btn-sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.82rem;
+  border-radius: 8px;
+}
+
+.ucab-btn-md {
+  padding: 0.7rem 1.3rem;
+  font-size: 0.95rem;
+}
+
+.ucab-btn-lg {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.05rem;
+  border-radius: 12px;
+}
+
+/* ── Variant: primary ── */
+.ucab-btn-primary {
+  background: var(--amber);
+  color: #0E1116;
+}
+
+.ucab-btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(255, 200, 87, 0.3);
+}
+
+/* ── Variant: ghost ── */
+.ucab-btn-ghost {
+  background: transparent;
+  color: var(--muted);
+}
+
+.ucab-btn-ghost:hover:not(:disabled) {
+  color: var(--text, #fff);
+}
+
+/* ── Variant: outline ── */
+.ucab-btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ucab-btn-outline:hover:not(:disabled) {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+/* ── Variant: danger ── */
+.ucab-btn-danger {
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.ucab-btn-danger:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+/* ── Loading spinner ── */
+.ucab-btn-spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: currentColor;
+  animation: ucab-spin 0.7s linear infinite;
+}
+
+@keyframes ucab-spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,221 @@
+.history-page {
+  min-height: 100vh;
+}
+
+.history-content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.history-content h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.history-subtext {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.history-loading {
+  color: var(--muted);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.history-error {
+  color: #ff8080;
+  background: rgba(255,80,80,0.1);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.empty-icon {
+  font-size: 3rem;
+}
+
+.rides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ride-card {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.ride-card:hover {
+  border-color: rgba(255,255,255,0.15);
+}
+
+.ride-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ride-cab-type {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cab-icon-lg {
+  font-size: 1.8rem;
+}
+
+.cab-type-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.ride-date {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.ride-status {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ride-route {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ride-route-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.route-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.route-dot.green { background: #22c55e; }
+.route-dot.red { background: #ef4444; }
+
+.route-text {
+  font-size: 0.88rem;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.route-dashed-line {
+  width: 1px;
+  height: 14px;
+  margin-left: 4px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--muted) 0,
+    var(--muted) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+.ride-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ride-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.meta-pill {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.cancel-btn {
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.3);
+  color: #ef4444;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.cancel-btn:hover {
+  background: rgba(239,68,68,0.2);
+}
+.ride-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pay-now-btn {
+  background: rgba(255,200,87,0.1);
+  border: 1px solid rgba(255,200,87,0.3);
+  color: var(--amber);
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s ease;
+}
+
+.pay-now-btn:hover {
+  background: rgba(255,200,87,0.2);
+}
+.track-btn {
+  background: rgba(96,165,250,0.1);
+  border: 1px solid rgba(96,165,250,0.3);
+  color: #60a5fa;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s ease;
+}
+
+.track-btn:hover {
+  background: rgba(96,165,250,0.2);
+}

@@ -1,0 +1,23 @@
+.driver-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.driver-layout-body {
+  display: flex;
+  flex: 1;
+}
+
+.driver-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .driver-main {
+    padding: 1.2rem;
+  }
+}
